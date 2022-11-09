@@ -1,10 +1,11 @@
+// gets current day from moment
 var rightNow = moment().format("dddd, MMM. DD, YYYY")
 $("#currentDay").html(rightNow);
-
+// writes current time to work with later in the page
 var timeNow = moment().hours();
 console.log(timeNow);
 
-
+// controls the color change feature of the scheduler
 function setTime1(){
     if (timeNow > 8) {
         $('#hour8').addClass('past')
@@ -75,7 +76,7 @@ function setTime10(){
         $('hour17').addClass('present')
      } else { $('hour17').addClass('past')
      }}
-
+// funds these functions on page load
 setTime1();
 setTime2();
 setTime3();
@@ -87,6 +88,7 @@ setTime8();
 setTime9();
 setTime10();
 
+// attpemts to run the save user input to page
 var userInput8 = document.getElementById("description8");
 var saveBtn8 = document.getElementById("saveBtn8");
 
@@ -207,7 +209,7 @@ saveBtn17.onclick = function() {
     userInput17.innerHTML += `${value}`;
 };
 
-
+// prints user input to page
 userInput8.innerHTML += localStorage.getItem("task");
 userInput9.innerHTML += localStorage.getItem("task");
 userInput10.innerHTML += localStorage.getItem("task");
