@@ -5,7 +5,6 @@ var timeNow = moment().hours();
 console.log(timeNow);
 
 
-
 function setTime1(){
     if (timeNow > 8) {
         $('#hour8').addClass('past')
@@ -88,4 +87,125 @@ setTime8();
 setTime9();
 setTime10();
 
+var userInput8 = document.getElementById("description8");
+var saveBtn8 = document.getElementById("saveBtn8");
 
+saveBtn8.onclick = function() {
+    var input = userInput8.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput8.innerHTML += `${value}`;
+};
+
+var userInput9 = document.getElementById("description9");
+var saveBtn9 = document.getElementById("saveBtn9");
+
+saveBtn8.onclick = function() {
+    var input = userInput9.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput9.innerHTML += `${value}`;
+};
+
+var userInput10 = document.getElementById("description10");
+var saveBtn10 = document.getElementById("saveBtn10");
+
+saveBtn8.onclick = function() {
+    var input = userInput10.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput10.innerHTML += `${value}`;
+};
+
+var userInput11 = document.getElementById("description11");
+var saveBtn11 = document.getElementById("saveBtn11");
+
+saveBtn11.onclick = function() {
+    var input = userInput11.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput11.innerHTML += `${value}`;
+};
+
+var userInput12 = document.getElementById("description12");
+var saveBtn12 = document.getElementById("saveBtn12");
+
+saveBtn12.onclick = function() {
+    var input = userInput12.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput12.innerHTML += `${value}`;
+};
+
+var userInput13 = document.getElementById("description13");
+var saveBtn13 = document.getElementById("saveBtn13");
+
+saveBtn13.onclick = function() {
+    var input = userInput13.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput13.innerHTML += `${value}`;
+};
+
+var userInput14 = document.getElementById("description14");
+var saveBtn14 = document.getElementById("saveBtn14");
+
+saveBtn14.onclick = function() {
+    var input = userInput14.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput14.innerHTML += `${value}`;
+};
+
+var userInput15 = document.getElementById("description15");
+var saveBtn15 = document.getElementById("saveBtn15");
+
+saveBtn15.onclick = function() {
+    var input = userInput15.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput15.innerHTML += `${value}`;
+};
+
+var userInput16 = document.getElementById("description16");
+var saveBtn16 = document.getElementById("saveBtn16");
+
+saveBtn16.onclick = function() {
+    var input = userInput16.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput16.innerHTML += `${value}`;
+};
+
+var userInput17 = document.getElementById("description17");
+var saveBtn17 = document.getElementById("saveBtn17");
+
+saveBtn17.onclick = function() {
+    var input = userInput17.value;
+
+    localStorage.setItem("task", input);
+    var value = (localStorage.getItem("task"));
+    console.log(value)
+    userInput17.innerHTML += `${value}`;
+};
+
+
+userInput8.innerHTML += localStorage.getItem("task");
