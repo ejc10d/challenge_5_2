@@ -13,18 +13,18 @@ function setTime1(){
      } else { $('hour8').addClass('future')
      }}
 function setTime2(){
-     if (timeNow === 9) {
-        $('#hour9').addClass('present')
-     } else if (timeNow < 9) {
-        $('hour9').addClass('past')
+     if (timeNow > 9) {
+        $('#hour9').addClass('past')
+     } else if (timeNow === 9) {
+        $('hour9').addClass('present')
      } else { $('hour9').addClass('future')
      }}
 function setTime3(){
-     if (timeNow < 10) {
-        $('#hour10').addClass('future')
-     } else if (timeNow === 10) {
-        $('hour10').addClass('present')
-     } else { $('hour10').addClass('past')
+     if (timeNow === 10) {
+        $('#hour10').addClass('present')
+     } else if (timeNow > 10) {
+        $('hour10').addClass('past')
+     } else { $('hour10').addClass('future')
      }}
 function setTime4(){
      if (timeNow < 11) {
@@ -209,3 +209,12 @@ saveBtn17.onclick = function() {
 
 
 userInput8.innerHTML += localStorage.getItem("task");
+userInput9.innerHTML += localStorage.getItem("task");
+userInput10.innerHTML += localStorage.getItem("task");
+userInput11.innerHTML += localStorage.getItem("task");
+userInput12.innerHTML += localStorage.getItem("task");
+userInput13.innerHTML += localStorage.getItem("task");
+userInput14.innerHTML += localStorage.getItem("task");
+userInput15.innerHTML += localStorage.getItem("task");
+userInput16.innerHTML += localStorage.getItem("task");
+userInput17.innerHTML += localStorage.getItem("task");
